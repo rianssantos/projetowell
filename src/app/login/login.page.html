@@ -1,0 +1,46 @@
+<ion-header >
+  <ion-toolbar color ="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light"> Login </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label position="stacked">Digite seu nome completo</ion-label>
+       <ion-input placeholder="Nome" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Digite seu E-mail</ion-label>
+       <ion-input  placeholder="E-mail" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Digite sua senha</ion-label>
+       <ion-input placeholder="Senha" type="password"></ion-input>
+    </ion-item>
+
+  
+    <ion-item>
+      <ion-label position="floating">Nivel</ion-label>
+      <ion-select>
+      <ion-select-option value="administrador">Administrador</ion-select-option> 
+      <ion-select-option value="gerente">Gerente</ion-select-option> 
+      <ion-select-option value="caixa">Caixa</ion-select-option> 
+      <ion-select-option value="vendedor">Vendedor</ion-select-option> 
+
+    </ion-select>
+      </ion-item>
+    
+
+    <ion-item lines="none">
+      <ion-button color="primary" (click)= "cadastrar()" expand="block">Entrar</ion-button>
+      <ion-button color="medium"  (click)="voltar()"     expand="block">Cancelar</ion-button>
+    </ion-item>
+</ion-list>
+</ion-content>

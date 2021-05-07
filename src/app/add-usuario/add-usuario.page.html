@@ -1,0 +1,47 @@
+<ion-header >
+  <ion-toolbar color ="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+      <ion-back-button> </ion-back-button>
+    </ion-buttons>
+    <ion-title *ngIf="id<1" color="light"> Adicionar Usuario </ion-title>
+    <ion-title *ngIf="id>0" color="light"> Editar Usuario </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+<ion-item>
+  <ion-label position="floating">Nome</ion-label>
+  <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Nivel</ion-label>
+        <ion-select>
+        <ion-select-option value="administrador">Administrador</ion-select-option> 
+        <ion-select-option value="gerente">Gerente</ion-select-option> 
+        <ion-select-option value="caixa">Caixa</ion-select-option> 
+        <ion-select-option value="vendedor">Vendedor</ion-select-option> 
+
+      </ion-select>
+        </ion-item>
+        
+        <ion-item lines="none">
+          <ion-button color="success" expand="block">Confirmar</ion-button>
+          <ion-button color="danger" expand="block">Cancelar</ion-button>
+        </ion-item>
+      </ion-list>
+        
+</ion-content>
